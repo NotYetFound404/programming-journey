@@ -20,8 +20,7 @@ programming-journey/
 
 # Today's Snippet:
 
-Go Hello World 🌍
-I wrote a simple Hello, World! program in Go
+I wrote a simple Obsidian to Hugo python automation to fix broken images!
 
 # Why This Repo?
 
