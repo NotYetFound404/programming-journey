@@ -7,6 +7,7 @@ This repository will also serve as a companion to the content on my website, whe
 
 
 # Structure
+(proposed)
 
 ```
 programming-journey/
@@ -20,7 +21,7 @@ programming-journey/
 
 # Today's Snippet:
 
-I wrote a simple Obsidian to Hugo python automation to fix broken images!
+I wrote a cointegration-based pairs trading strategy in R with a backtest using synthetic data!
 
 # Why This Repo?
 
