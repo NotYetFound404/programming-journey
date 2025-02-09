@@ -22,6 +22,7 @@ programming-journey/
 # Today's Snippet:
 
 I wrote a cointegration-based pairs trading strategy in R with a backtest using synthetic data!
+Started a mbs pricing project with synth data
 
 # Why This Repo?
 
