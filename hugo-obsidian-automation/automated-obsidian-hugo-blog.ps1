@@ -1,6 +1,6 @@
 # Definir rutas de los scripts
-$robocopyScript = "C:\Users\crrvg\w11-codebases\programming-journey\02.02.2025\robocopy-posts-and-images.ps1"
-$pythonExecutable = "C:/Users/crrvg/w11-codebases/programming-journey/.venv/Scripts/python.exe"
+$robocopyScript = "C:/Users/crrvg/w11-codebases/programming-journey/hugo-obsidian-automation/robocopy-posts-and-images.ps1"
+$pythonExecutable = "C:/Users/crrvg/w11-codebases/programming-journey/hugo-obsidian-automation/hugo-obsidian-image-copier.py"
 $pythonScript = "C:/Users/crrvg/w11-codebases/programming-journey/02.02.2025/hugo-obsidian-image-copier.py"
 
 # Ejecutar el script de robocopy
