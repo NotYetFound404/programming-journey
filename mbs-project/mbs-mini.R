@@ -1,65 +1,4 @@
 source("utils.r")
-set.seed(123)
-
-# Step 1. Synthetic Data Generation
-contracts_per_SES = 50
-
-# Generate sample data with more accurate parameters
-SES_A <- simulate_mortgages(
-  n = contracts_per_SES,
-  mean_loan = 850000,
-  sd_loan = 100000,  # More realistic variance
-  mean_rate = 0.025,
-  sd_rate = 0.002,   # Smaller relative SD for rates
-  mean_term = 5,
-  sd_term = 1.5
-) %>%
-  assign_defaults(0.02) %>%
-  assign_prepayments(0.10) %>%
-  mutate(SES = "A",
-         UID = paste0(SES, "-",LoanID)
-         )
-
-SES_B <- simulate_mortgages(
-  n = contracts_per_SES,
-  mean_loan = 450000,
-  sd_loan = 100000,  # More realistic variance
-  mean_rate = 0.05,
-  sd_rate = 0.002,   # Smaller relative SD for rates
-  mean_term = 10,
-  sd_term = 1.5
-) %>%
-  assign_defaults(0.05) %>%
-  assign_prepayments(0.035)%>%
-  mutate(SES = "B",
-         UID = paste0(SES, "-",LoanID)
-  )
-
-SES_C <- simulate_mortgages(
-  n = contracts_per_SES,
-  mean_loan = 150000,
-  sd_loan = 50000,  # More realistic variance
-  mean_rate = 0.085,
-  sd_rate = 0.002,   # Smaller relative SD for rates
-  mean_term = 30,
-  sd_term = 1.5
-) %>%
-  assign_defaults(0.08) %>%
-  assign_prepayments(0.01)%>%
-  mutate(SES = "C",
-         UID = paste0(SES, "-",LoanID)
-  )
-pool_of_contracts <- rbind(SES_A,SES_B,SES_C)
-
-# Step 2: Cash flow modeling
-cash_flows <- aggregate_cash_flows(pool_of_contracts)
-
-plot_portfolio_cashflow_trends(cash_flows = cash_flows)
-plot_portfolio_cashflow_trends_breakdown(cash_flows = cash_flows)
-plot_cumulative_payment_waterfall(cash_flows = cash_flows)
-plot_overall_portfolio(cash_flows = cash_flows)
-
-
 # Step 3: sensitivity analysis
 
 library(ggplot2)
@@ -110,9 +49,38 @@ yield_curve <- data.frame(
   Yield = c(0.04, 0.041, 0.042, 0.044, 0.0455, 0.047, 0.049, 0.05, 0.051, 0.052)
 )
 
+library(dplyr)
+library(ggplot2)
 
+# Yield curve data
+yield_curve <- data.frame(
+  Maturity = c(1, 2, 3, 5, 7, 10, 15, 20, 25, 30),
+  Yield = c(0.04, 0.041, 0.042, 0.044, 0.0455, 0.047, 0.049, 0.05, 0.051, 0.052)
+)
 
+# Define base mortgage pools
+contracts_per_SES <- 50
+SES_A <- generate_mortgage_pool(contracts_per_SES, 850000, 100000, 0.025, 0.002, 5, 1.5, 0.02, 0.10, "A")
+SES_B <- generate_mortgage_pool(contracts_per_SES, 450000, 100000, 0.05, 0.002, 10, 1.5, 0.05, 0.035, "B")
+SES_C <- generate_mortgage_pool(contracts_per_SES, 150000, 50000, 0.085, 0.002, 30, 1.5, 0.08, 0.01, "C")
 
+# Combine into a single pool
+base_pool <- bind_rows(SES_A, SES_B, SES_C)
 
-# #Testing
-# test_file("tests.R")
+# Iterate over sensitivity grid
+shock_levels <- unique(deterministic_sensitivity_data$SES_A_Shock)
+results <- list()
+for (shock in shock_levels) {
+  stressed_pool <- dynamic_adjustment(base_pool, deterministic_sensitivity_data, shock)
+  cash_flows <- compute_cash_flows(stressed_pool)
+  results[[as.character(shock)]] <- cash_flows
+}
+
+# Convert results to dataframe for visualization
+results_df <- bind_rows(results, .id = "ShockLevel")
+
+# Visualization
+ggplot(results_df, aes(x = ShockLevel, y = FairMarketPrice, color = SES, group = SES)) +
+  geom_line() +
+  geom_point() +
+  labs(title = "MBS Tranche Fair Market Pricing Analysis", x = "SES_A Default Shock", y = "Fair Market Price")
