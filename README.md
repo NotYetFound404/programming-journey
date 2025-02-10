@@ -21,8 +21,13 @@ programming-journey/
 
 # Today's Snippet:
 
-I wrote a cointegration-based pairs trading strategy in R with a backtest using synthetic data!
-Started a mbs pricing project with synth data
+- Wrote a cointegration-based pairs trading strategy in R with a backtest using synthetic data.
+- Started a MBS pricing project
+- Analyzed risk management metrics for simulated price paths under different shock regimes
+
+# To-do
+- Refactor current projects
+- Add detailed explanations
 
 # Why This Repo?
 
