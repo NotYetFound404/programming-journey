@@ -26,7 +26,7 @@ programming-journey/
 - Analyzed risk management metrics for simulated price paths under different shock regimes
 
 # To-do
-- Refactor current projects
+- Refactor current projects (post-poned for now)
 - Add detailed explanations
 
 # Why This Repo?
