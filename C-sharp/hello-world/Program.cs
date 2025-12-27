@@ -40,17 +40,20 @@
 
 //Loops
 
-int[] numbers = [1,2,3,4];
-//for each (when you have an iterable collection)
-foreach(var number in numbers)
-{
-    Console.WriteLine($"foreach method: {number}");
-}
-//Standard for loop
-for(var i=10; i>=8; i--)
-{
-    Console.WriteLine($"for loop method: {i}");
-}
-//Linq foreach
+// int[] numbers = [1,2,3,4];
+// //for each (when you have an iterable collection)
+// foreach(var number in numbers)
+// {
+//     Console.WriteLine($"foreach method: {number}");
+// }
+// //Standard for loop
+// for(var i=10; i>=8; i--)
+// {
+//     Console.WriteLine($"for loop method: {i}");
+// }
+// //Linq foreach
 
-numbers.ToList().ForEach((e) => Console.WriteLine($"LINQ: {e}"));
+// numbers.ToList().ForEach((e) => Console.WriteLine($"LINQ: {e}"));
+
+
+
