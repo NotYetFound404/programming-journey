@@ -56,4 +56,63 @@
 // numbers.ToList().ForEach((e) => Console.WriteLine($"LINQ: {e}"));
 
 
+// Comparison operators
 
+// int algo = 10;
+// Console.WriteLine(algo is bool);
+
+// // Enums & switch:
+// var currState = PlayerDoes.Jump;
+
+// switch (currState)
+// {
+//     case PlayerDoes.Jump:
+//         Console.WriteLine("Player jumps into the air");
+//         break;
+
+//     case PlayerDoes.Run:
+//         Console.WriteLine("Player starts running");
+//         break;
+
+//     case PlayerDoes.Sleep:
+//         Console.WriteLine("Player is sleeping");
+//         break;
+//     default:
+//         Console.WriteLine("Nothing");
+//         break;
+// }
+
+// var newSwitch = currState switch
+// {
+//     PlayerDoes.Jump => "I'm jumping high",
+//     PlayerDoes.Run => "I'm running high",
+//     PlayerDoes.Sleep => "I'm sleeping high",
+//     _ => "Not doing Anything"   
+// };
+// Console.WriteLine($"From new switch: {newSwitch}");
+
+
+// enum PlayerDoes
+// {
+//     Jump,
+//     Run,
+//     Sleep,
+// }
+
+
+
+// Tuples
+static (int sum, int count) Analyze(int[] numbers)
+{
+    int sum = numbers.Sum();
+    int count = numbers.Length;
+    return (sum, count);
+}
+
+var analysis = Analyze([2,3]);
+Console.WriteLine(analysis.sum);
+Console.WriteLine(analysis.count);
+
+var (destructuredSum, destructuredCount) = Analyze([2,3]);
+Console.WriteLine(destructuredCount);
+Console.WriteLine(destructuredSum);
