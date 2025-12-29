@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "+10a6HheAYQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\crrvg\\w11-codebases\\programming-journey\\C-sharp\\sampler-xll-addin\\ouroboros\\ouroboros.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\crrvg\\.nuget\\packages\\exceldna.addin\\1.9.0\\exceldna.addin.1.9.0.nupkg.sha512",
+    "C:\\Users\\crrvg\\.nuget\\packages\\exceldna.integration\\1.9.0\\exceldna.integration.1.9.0.nupkg.sha512",
+    "C:\\Users\\crrvg\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.22\\microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\crrvg\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.22\\microsoft.windowsdesktop.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\crrvg\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.22\\microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512"
+  ],
+  "logs": []
+}

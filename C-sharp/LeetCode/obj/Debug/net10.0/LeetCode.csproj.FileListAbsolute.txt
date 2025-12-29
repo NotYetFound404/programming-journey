@@ -1,0 +1,15 @@
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\LeetCode\bin\Debug\net10.0\LeetCode.exe
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\LeetCode\bin\Debug\net10.0\LeetCode.deps.json
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\LeetCode\bin\Debug\net10.0\LeetCode.runtimeconfig.json
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\LeetCode\bin\Debug\net10.0\LeetCode.dll
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\LeetCode\bin\Debug\net10.0\LeetCode.pdb
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\LeetCode\obj\Debug\net10.0\LeetCode.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\LeetCode\obj\Debug\net10.0\LeetCode.AssemblyInfoInputs.cache
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\LeetCode\obj\Debug\net10.0\LeetCode.AssemblyInfo.cs
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\LeetCode\obj\Debug\net10.0\LeetCode.csproj.CoreCompileInputs.cache
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\LeetCode\obj\Debug\net10.0\LeetCode.sourcelink.json
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\LeetCode\obj\Debug\net10.0\LeetCode.dll
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\LeetCode\obj\Debug\net10.0\refint\LeetCode.dll
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\LeetCode\obj\Debug\net10.0\LeetCode.pdb
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\LeetCode\obj\Debug\net10.0\LeetCode.genruntimeconfig.cache
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\LeetCode\obj\Debug\net10.0\ref\LeetCode.dll

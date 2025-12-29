@@ -1,0 +1,178 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-windows7.0": {
+      "ExcelDna.AddIn/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "ExcelDna.Integration": "[1.9.0]"
+        },
+        "build": {
+          "build/ExcelDna.AddIn.props": {},
+          "build/ExcelDna.AddIn.targets": {}
+        }
+      },
+      "ExcelDna.Integration/1.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/ExcelDna.Integration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/ExcelDna.Integration.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ExcelDna.AddIn/1.9.0": {
+      "sha512": "+jxXXswl6ds2ZGTwsuKWwO8crfzqvBFqd/t3PmEtg2YR6EN9F2pA97hiXblckhWZ6AKBlSGEC/ONTrCON2O33A==",
+      "type": "package",
+      "path": "exceldna.addin/1.9.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/ExcelDna.AddIn.props",
+        "build/ExcelDna.AddIn.targets",
+        "content/ExcelDna-Template.dna",
+        "content/Properties/ExcelDna.Build.props",
+        "exceldna.addin.1.9.0.nupkg.sha512",
+        "exceldna.addin.nuspec",
+        "images/ExcelDna-nu.png",
+        "readme.txt",
+        "tools/net462/EnvDTE.dll",
+        "tools/net462/ExcelDna.AddIn.Tasks.dll",
+        "tools/net462/ExcelDna.Integration.dll",
+        "tools/net462/ExcelDna.xll",
+        "tools/net462/ExcelDna64.xll",
+        "tools/net462/Microsoft.Extensions.DependencyModel.dll",
+        "tools/net462/Newtonsoft.Json.dll",
+        "tools/net462/System.Collections.Immutable.dll",
+        "tools/net462/System.Reflection.Metadata.dll",
+        "tools/net462/install.ps1",
+        "tools/net462/uninstall.ps1",
+        "tools/net6.0-windows7.0/AsmResolver.PE.File.dll",
+        "tools/net6.0-windows7.0/AsmResolver.PE.dll",
+        "tools/net6.0-windows7.0/AsmResolver.dll",
+        "tools/net6.0-windows7.0/ExcelDna.AddIn.Tasks.dll",
+        "tools/net6.0-windows7.0/ExcelDna.Integration.dll",
+        "tools/net6.0-windows7.0/ExcelDna.xll",
+        "tools/net6.0-windows7.0/ExcelDna64.xll"
+      ]
+    },
+    "ExcelDna.Integration/1.9.0": {
+      "sha512": "A1nbeRWa+rg3RoO9NV9iqNwQxWb9eVNG+Ki3uCfo8D3U8CT11/fzTIvVT3y2LoCTzqRIPwTysqp9sj42MKYw5Q==",
+      "type": "package",
+      "path": "exceldna.integration/1.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "exceldna.integration.1.9.0.nupkg.sha512",
+        "exceldna.integration.nuspec",
+        "images/ExcelDna-nu.png",
+        "lib/net462/ExcelDna.Integration.dll",
+        "lib/net462/ExcelDna.Integration.xml",
+        "lib/net6.0-windows7.0/ExcelDna.Integration.dll",
+        "lib/net6.0-windows7.0/ExcelDna.Integration.xml"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0-windows7.0": [
+      "ExcelDna.AddIn >= 1.9.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\crrvg\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\crrvg\\w11-codebases\\programming-journey\\C-sharp\\sampler-xll-addin\\ouroboros\\ouroboros.csproj",
+      "projectName": "ouroboros",
+      "projectPath": "C:\\Users\\crrvg\\w11-codebases\\programming-journey\\C-sharp\\sampler-xll-addin\\ouroboros\\ouroboros.csproj",
+      "packagesPath": "C:\\Users\\crrvg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\crrvg\\w11-codebases\\programming-journey\\C-sharp\\sampler-xll-addin\\ouroboros\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\crrvg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.100"
+    },
+    "frameworks": {
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows",
+        "dependencies": {
+          "ExcelDna.AddIn": {
+            "target": "Package",
+            "version": "[1.9.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.22, 8.0.22]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.22, 8.0.22]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.22, 8.0.22]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\sampler-xll-addin\ouroboros\bin\Debug\net8.0-windows\ouroboros.deps.json
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\sampler-xll-addin\ouroboros\bin\Debug\net8.0-windows\ouroboros.runtimeconfig.json
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\sampler-xll-addin\ouroboros\bin\Debug\net8.0-windows\ouroboros.dll
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\sampler-xll-addin\ouroboros\bin\Debug\net8.0-windows\ouroboros.pdb
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\sampler-xll-addin\ouroboros\obj\Debug\net8.0-windows\ouroboros.csproj.AssemblyReference.cache
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\sampler-xll-addin\ouroboros\obj\Debug\net8.0-windows\ouroboros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\sampler-xll-addin\ouroboros\obj\Debug\net8.0-windows\ouroboros.AssemblyInfoInputs.cache
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\sampler-xll-addin\ouroboros\obj\Debug\net8.0-windows\ouroboros.AssemblyInfo.cs
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\sampler-xll-addin\ouroboros\obj\Debug\net8.0-windows\ouroboros.csproj.CoreCompileInputs.cache
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\sampler-xll-addin\ouroboros\obj\Debug\net8.0-windows\ouroboros.sourcelink.json
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\sampler-xll-addin\ouroboros\obj\Debug\net8.0-windows\ouroboros.dll
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\sampler-xll-addin\ouroboros\obj\Debug\net8.0-windows\ouroboros.pdb
+C:\Users\crrvg\w11-codebases\programming-journey\C-sharp\sampler-xll-addin\ouroboros\obj\Debug\net8.0-windows\ouroboros.genruntimeconfig.cache

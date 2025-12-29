@@ -1,0 +1,53 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ouroboros/1.0.0": {
+        "dependencies": {
+          "ExcelDna.AddIn": "1.9.0"
+        },
+        "runtime": {
+          "ouroboros.dll": {}
+        }
+      },
+      "ExcelDna.AddIn/1.9.0": {
+        "dependencies": {
+          "ExcelDna.Integration": "1.9.0"
+        }
+      },
+      "ExcelDna.Integration/1.9.0": {
+        "runtime": {
+          "lib/net6.0-windows7.0/ExcelDna.Integration.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.9.0.14"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ouroboros/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ExcelDna.AddIn/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+jxXXswl6ds2ZGTwsuKWwO8crfzqvBFqd/t3PmEtg2YR6EN9F2pA97hiXblckhWZ6AKBlSGEC/ONTrCON2O33A==",
+      "path": "exceldna.addin/1.9.0",
+      "hashPath": "exceldna.addin.1.9.0.nupkg.sha512"
+    },
+    "ExcelDna.Integration/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A1nbeRWa+rg3RoO9NV9iqNwQxWb9eVNG+Ki3uCfo8D3U8CT11/fzTIvVT3y2LoCTzqRIPwTysqp9sj42MKYw5Q==",
+      "path": "exceldna.integration/1.9.0",
+      "hashPath": "exceldna.integration.1.9.0.nupkg.sha512"
+    }
+  }
+}
